@@ -1,0 +1,15 @@
+data/raw/
+.superpowers/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+!.env.example
+frontend/node_modules/
+frontend/dist/
+*.tmp
+.msg.tmp
+.m
+.msg
+.msg2
