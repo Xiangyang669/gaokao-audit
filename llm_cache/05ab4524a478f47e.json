@@ -1,0 +1,4 @@
+{
+  "cache_key": "parse:tmpc6l7ubsv.png",
+  "content": "{\"items\":[{\"seq\":1,\"university_name\":\"暨南大学\",\"major_group\":\"201\",\"min_score\":612,\"min_rank\":18043,\"tier\":\"稳\"},{\"seq\":2,\"university_name\":\"华南师范大学\",\"major_group\":\"203\",\"min_score\":598,\"min_rank\":27615,\"tier\":\"稳\"},{\"seq\":3,\"university_name\":\"广东工业大学\",\"major_group\":\"202\",\"min_score\":570,\"min_rank\":51302,\"tier\":\"冲\"},{\"seq\":4,\"university_name\":\"深圳技术大学\",\"major_group\":\"101\",\"min_score\":556,\"min_rank\":64021,\"tier\":\"保\"}]}"
+}

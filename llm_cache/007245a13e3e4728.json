@@ -1,0 +1,4 @@
+{
+  "cache_key": "followup:- 第 2 条：rank_mismatch —— 位次 275519 与 2025 年物理类的表不符（应为 276595）\n- 第 9 条：rank_mismatch —— 位次 249028 与 2025 年物理类的表不符（应为 249038）\n- 第 11 条：rank_mismatch —— 位次 245639 与 2025 年物理类的表不符（应为 245740）\n- 第 12 条：tier_inconsistent —— 标为「稳」，但考生位次 20000 比该组最低位次 19415 更靠后（位次数值越大越靠后）—— 实际够不着",
+  "content": "{\"actions\": [\"adjacent_group_verify\"]}"
+}

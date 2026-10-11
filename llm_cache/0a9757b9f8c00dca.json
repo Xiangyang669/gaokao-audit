@@ -1,0 +1,4 @@
+{
+  "cache_key": "recommend:Candidate(score=685, category='物理类', rank=205, subjects=('物理', '化学', '生物'), cities=(), majors=()):8:[{\"university_name\": \"复旦大学上海医学院\", \"major_group\": \"201\", \"min_score\": 676.0, \"min_rank\": 224, \"subject_req\": null}, {\"university_name\": \"上海交通大学医学院\", \"major_group\": \"201\", \"min_score\": 675.0, \"min_rank\": 251, \"subject_req\": null}]",
+  "content": "{\"recommendations\":[{\"university_name\":\"复旦大学上海医学院\",\"major_group\":\"201\",\"tier\":\"稳\",\"reason\":\"考生位次205，该组去年最低位次224，仅差19名，属于接近区间；685分也高于去年最低676分，且物化生满足要求、无城市/专业偏好下，可作为上海顶尖医学院的稳健主申。\"},{\"university_name\":\"上海交通大学医学院\",\"major_group\":\"201\",\"tier\":\"保\",\"reason\":\"该组去年最低位次251，考生205名领先46位，685分比去年最低675分高10分；在无城市/专业偏好下，这是同层次顶尖医学院中安全垫更足的选择，可作保底档。\"}]}"
+}
