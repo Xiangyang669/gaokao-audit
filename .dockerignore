@@ -1,0 +1,14 @@
+# 🔴 密钥绝不能进镜像 —— 镜像会被推到镜像仓库，一旦进去就洗不干净
+.env
+.env.*
+!.env.example
+
+# 大件不进镜像
+data/raw/
+frontend/node_modules/
+frontend/dist/
+.superpowers/
+.git/
+.pytest_cache/
+__pycache__/
+*.pyc

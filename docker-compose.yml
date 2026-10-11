@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    env_file: [.env]           # key 从宿主的 .env 注入，**不打进镜像**
+    environment:
+      PER_IP_DAILY: "3"        # 🔴 公网部署前必须把配额设成真实值
+      GLOBAL_CAP_YUAN: "10"
+      PUBLIC_BASE_URL: "http://127.0.0.1:8000"
+    volumes:
+      - ./llm_cache:/app/llm_cache   # 缓存挂出来：重建镜像不用重新花钱
+    restart: unless-stopped

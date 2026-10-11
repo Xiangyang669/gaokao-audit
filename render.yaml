@@ -1,0 +1,18 @@
+# Render Blueprint —— 让部署少几十次点击：New → Blueprint → 选这个仓库即可。
+services:
+  - type: web
+    name: gaokao-audit
+    runtime: docker            # 刻意不用 serverless：多 agent 串行调 LLM，一次几十秒
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      # 🔴 sync: false 表示"部署时让你手填" —— key 不进仓库、不进镜像
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: PER_IP_DAILY
+        value: "3"             # 每个 IP 每天 3 次
+      - key: GLOBAL_CAP_YUAN
+        value: "10"            # 全局封顶 ¥10，到顶自动转演示模式
+      - key: HOST
+        value: "0.0.0.0"       # 容器内必须绑 0.0.0.0
