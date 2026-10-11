@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bc1-year-mismatch",
+    "source": "新京报《用AI填高考志愿靠谱吗？实测6款软件》",
+    "case": "用 2025 年的一分一段表给 2026 年考生定位（DeepSeek、豆包均如此）",
+    "expected_finding_kind": "rank_year_mismatch",
+    "note": "分数看着对，位次却整体偏移 → 据此判'稳/冲'必然错"
+  },
+  {
+    "id": "bc2-rank-off-by-thousands",
+    "source": "华声在线 / 新京报实测（DeepSeek）",
+    "case": "北京 579 分被判「约 15700 名」，专家指出位次前拉约 2440 名",
+    "expected_finding_kind": "rank_year_mismatch",
+    "note": "同一类的另一实例：位次要靠另一年的表才能解释得通"
+  },
+  {
+    "id": "bc3-wrong-admission-line",
+    "source": "新京报实测（百度 AI 志愿助手）",
+    "case": "首都医科大学 2025 北京录取最低分写成 582，官方本科普通批为 548",
+    "expected_finding_kind": "line_mismatch",
+    "note": "差 34 分，仍被列为'可冲击'"
+  },
+  {
+    "id": "bc4-tier-contradiction",
+    "source": "华声在线实测（阿里千问）",
+    "case": "把「2025 最低 576 分 / 17506 位」的专业放进'稳'档，而测评考生是 18140 位",
+    "expected_finding_kind": "tier_inconsistent",
+    "note": "位次数值越大越靠后：18140 > 17506 ⇒ 够不着却标'稳'"
+  },
+  {
+    "id": "bc5-parallel-volunteer-count",
+    "source": "华声在线实测（微信搜一搜）",
+    "case": "称「北京平行志愿可填 24 个专业组」，实际为 30 个",
+    "expected_finding_kind": null,
+    "why_not_caught": "本项目**没有**『填报规则常识』这一类检查 —— 它既不在一分一段表、投档线，也不在招生计划里，而是一个省份级的政策常量。要覆盖它需要额外维护一份『各省规则常量表』并逐年核对，属于当前版本明确不做的范围（spec §2 非目标：只做数据与逻辑的自洽性检查）。"
+  }
+]
